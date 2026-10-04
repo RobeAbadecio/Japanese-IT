@@ -1,0 +1,14 @@
+EbookLib==0.20
+beautifulsoup4==4.15.0
+fastapi==0.142.2
+fugashi==1.5.2
+jamdict==0.1a11.post2
+jamdict_data==1.5
+mlx-whisper==0.4.3
+pydantic==2.13.5
+pypdf==6.19.0
+python-multipart==0.0.32
+requests==2.34.2
+unidic-lite==1.0.8
+uvicorn==0.54.0
+yt-dlp==2026.8.19

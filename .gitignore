@@ -1,0 +1,13 @@
+.venv/
+data/
+__pycache__/
+ios/Resources/
+ios/build/
+*.[mM][dD]
+.DS_Store
+*.pyc
+*.log
+.env
+.env.*
+xcuserdata/
+*.xcuserstate

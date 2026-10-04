@@ -1,0 +1,49 @@
+name: NihongoStudy
+options:
+  bundleIdPrefix: com.robe
+  deploymentTarget:
+    iOS: "26.0"
+targets:
+  NihongoStudy:
+    type: application
+    platform: iOS
+    sources:
+      - NihongoStudy
+      # MeCab (word splitter), compiled into the app. Source: github.com/taku910/mecab (BSD/LGPL/GPL).
+      - path: MeCab
+        compilerFlags: [-DHAVE_CONFIG_H, -w]
+      # Dictionaries made by tools/build_resources.py (not in Git; run it before building).
+      - path: Resources/unidic
+        type: folder
+        buildPhase: resources
+      - path: Resources/jmdict.sqlite
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.robe.nihongostudy
+        MARKETING_VERSION: "2.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: 日本語
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: Turns the Japanese speech in your videos and audio into text, on this iPad.
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SWIFT_VERSION: "5.0"
+        SWIFT_OBJC_BRIDGING_HEADER: NihongoStudy/Bridging.h
+        HEADER_SEARCH_PATHS: $(SRCROOT)/MeCab
+        CLANG_CXX_LANGUAGE_STANDARD: gnu++14
+        TARGETED_DEVICE_FAMILY: "1,2"
+        DEVELOPMENT_TEAM: 9TVPCUWFVX
+        CODE_SIGN_STYLE: Automatic
+    info:
+      path: NihongoStudy/Info.plist
+      properties:
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true  # some Japanese sites still use plain http
+        UILaunchScreen: {}
+        CFBundleDisplayName: 日本語
+        NSSpeechRecognitionUsageDescription: Turns the Japanese speech in your videos and audio into text, on this iPad.
+        UIFileSharingEnabled: true
+        LSSupportsOpeningDocumentsInPlace: false

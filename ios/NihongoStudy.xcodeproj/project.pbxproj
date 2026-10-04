@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02F64C9DC208C07CED396D7D /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = D598C90587D10D10063BE875 /* Library.swift */; };
+		036D94E7C68F4D1479EE1BBF /* unidic in Resources */ = {isa = PBXBuildFile; fileRef = 179343EE36DB62901CE4C778 /* unidic */; };
+		088D73F006F9C5AA885AC997 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0AF3CD2349E817CBFEB3E /* Tokenizer.swift */; };
+		09D34D1690B3867508583E6E /* Transcriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8086B8C4B39CB88A4562D1A /* Transcriber.swift */; };
+		0D71AFB58407A58C717BE970 /* dictionary_rewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC111381ACA483153B10F008 /* dictionary_rewriter.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		0EA6DDB6FB74B9EADEDE03DE /* connector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2FF038FAB96EFA615BB721C /* connector.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		13BAF7CE3F598EA2F6E9D13A /* Vocab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ECFB69A5960FE4AD1ADA4C /* Vocab.swift */; };
+		1D19B81F59E617B9CAA546D6 /* iconv_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8986CF3C4BAA317DABD89E21 /* iconv_utils.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		20DE12A3723FD95ADE06FADE /* jmdict.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C08C31F6F9F312085FCCE155 /* jmdict.sqlite */; };
+		305D593E291020EA2891A6FE /* param.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF4AC6220C2BD5564B2BA7EA /* param.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		441218884F60B4B6B565253B /* tokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D6AB900D45D96EB7582C6E0 /* tokenizer.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		531CA5322C46E2E560BBC1F6 /* string_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C348C557930390B04C7AC1D /* string_buffer.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		602EBCB255F1C3887265EE4F /* writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81C7B4B77C8EF06A634B630C /* writer.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		6967D82524F7BE1D942BA74A /* NihongoStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D35E26112FD26681B4327CD /* NihongoStudyApp.swift */; };
+		6AE1D49ED843082B0115D30C /* nbest_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19625A0117F469ED9F16EAF7 /* nbest_generator.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		6D0C5E6D62E6B0C204C5C160 /* feature_index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A53D801515B63619973958C /* feature_index.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		77FB186082EBA22DDFB1215D /* tagger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A523788E5CC992EB5954FDA /* tagger.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		78CB164F04A26DA64BF0D55A /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76524964D7C55EC926CB6DF6 /* Grammar.swift */; };
+		8F1AC053D6571CAFD6D6E66E /* Extract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01C010D63D745F4696148A /* Extract.swift */; };
+		929F1B20474309C08E74F068 /* context_id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D2AF13793282E84F6EBA8B7 /* context_id.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		99088A886B71040EE3A40A2C /* char_property.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2DA28AF5CADEB1E76714E /* char_property.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		9F3B06DD449CECB99E62AC90 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF39DB03EE57F25DAF827ECC /* Dictionary.swift */; };
+		A27CBE76ADD66EF8AFF7AE5A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82659D7078CD5A84C0CBC3A /* DetailView.swift */; };
+		A3A6BD31F37AB506FA8EEF11 /* viterbi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C0E1052F7E5646C21FD05 /* viterbi.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		B1ED28FB5E5E9894C33A892A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCFD7F2FED68CEC4141417 /* SettingsView.swift */; };
+		B4EB21D620F533249D20F03A /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A137754991CB7D6F1F618905 /* utils.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		C62D22A9B109E190C0992A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B10E8CC9DAA10FF680AA1E /* Assets.xcassets */; };
+		DCAEE8AECE155C7DF23C374A /* KnownWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D457988CAA4DFCA5A27D61 /* KnownWordsView.swift */; };
+		E42476FB4396D5820BAFAB76 /* dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFFFE066DD9D904DB598D919 /* dictionary.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		F218B00CA322436F261EB08C /* libmecab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11D218A5D83517B5575D158D /* libmecab.cpp */; settings = {COMPILER_FLAGS = "-DHAVE_CONFIG_H -w"; }; };
+		F2D180672984799062C79DD2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C029D8CCE212DD8228ACFB3D /* Models.swift */; };
+		F6D8D1340092D713D5F6F866 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDBE80530CC3A52636E2D5 /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0555809DA2DE0EC88CD0F1FD /* COPYING */ = {isa = PBXFileReference; path = COPYING; sourceTree = "<group>"; };
+		06EB1244EF5C35DC5060BBEE /* iconv_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iconv_utils.h; sourceTree = "<group>"; };
+		08B10E8CC9DAA10FF680AA1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ECCFD7F2FED68CEC4141417 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0EF0AF3CD2349E817CBFEB3E /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		11D218A5D83517B5575D158D /* libmecab.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = libmecab.cpp; sourceTree = "<group>"; };
+		179343EE36DB62901CE4C778 /* unidic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = unidic; path = Resources/unidic; sourceTree = SOURCE_ROOT; };
+		19625A0117F469ED9F16EAF7 /* nbest_generator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = nbest_generator.cpp; sourceTree = "<group>"; };
+		1D35E26112FD26681B4327CD /* NihongoStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NihongoStudyApp.swift; sourceTree = "<group>"; };
+		22B180C5E462CADFA05C1404 /* mecab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mecab.h; sourceTree = "<group>"; };
+		2EBA38218D9BF30A60ED9818 /* string_buffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = string_buffer.h; sourceTree = "<group>"; };
+		2F25BACDE38BC8F766357DCC /* char_property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = char_property.h; sourceTree = "<group>"; };
+		32A089A5FD639903CD76B6F3 /* NihongoStudy.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = NihongoStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DE68724D862F89AFF8ACFF /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		3A01C010D63D745F4696148A /* Extract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extract.swift; sourceTree = "<group>"; };
+		3C507A05644AEE6AD22D7014 /* connector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = connector.h; sourceTree = "<group>"; };
+		43ECFB69A5960FE4AD1ADA4C /* Vocab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocab.swift; sourceTree = "<group>"; };
+		48D5DADC0AF536A97E14A303 /* learner_node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = learner_node.h; sourceTree = "<group>"; };
+		4C348C557930390B04C7AC1D /* string_buffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = string_buffer.cpp; sourceTree = "<group>"; };
+		50CE668C9195ED008975BE46 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		5A0941458288496401E513F3 /* ucs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ucs.h; sourceTree = "<group>"; };
+		5E7341CA7FDED62BD389514E /* nbest_generator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nbest_generator.h; sourceTree = "<group>"; };
+		5F5CF45A7C8D36044934BE81 /* dictionary_rewriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dictionary_rewriter.h; sourceTree = "<group>"; };
+		6A523788E5CC992EB5954FDA /* tagger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tagger.cpp; sourceTree = "<group>"; };
+		6D6AB900D45D96EB7582C6E0 /* tokenizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tokenizer.cpp; sourceTree = "<group>"; };
+		6DB2DA28AF5CADEB1E76714E /* char_property.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = char_property.cpp; sourceTree = "<group>"; };
+		6E17D1A382F29123E03EF1FE /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		6E1C0E1052F7E5646C21FD05 /* viterbi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = viterbi.cpp; sourceTree = "<group>"; };
+		76524964D7C55EC926CB6DF6 /* Grammar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grammar.swift; sourceTree = "<group>"; };
+		81C7B4B77C8EF06A634B630C /* writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = writer.cpp; sourceTree = "<group>"; };
+		839E0C585BD167344E2AA2FE /* darts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = darts.h; sourceTree = "<group>"; };
+		8684191C057A360549386CFC /* context_id.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = context_id.h; sourceTree = "<group>"; };
+		8986CF3C4BAA317DABD89E21 /* iconv_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = iconv_utils.cpp; sourceTree = "<group>"; };
+		8A087EF9BF36D07A630289B7 /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		8D2AF13793282E84F6EBA8B7 /* context_id.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = context_id.cpp; sourceTree = "<group>"; };
+		8F42617322EFCA2B4FAB4C7F /* feature_index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = feature_index.h; sourceTree = "<group>"; };
+		9A53D801515B63619973958C /* feature_index.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = feature_index.cpp; sourceTree = "<group>"; };
+		A137754991CB7D6F1F618905 /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		A3030ABF52B9F4DB076FE708 /* thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		A63428B431B93E578677FDCF /* stream_wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stream_wrapper.h; sourceTree = "<group>"; };
+		AA331250D21B6201ABE43DF4 /* ucstable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ucstable.h; sourceTree = "<group>"; };
+		B94A120F4EFF4DB8E79D1EAB /* freelist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = freelist.h; sourceTree = "<group>"; };
+		BA85461006CEF5A7CA0BE533 /* BSD */ = {isa = PBXFileReference; path = BSD; sourceTree = "<group>"; };
+		C029D8CCE212DD8228ACFB3D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C08C31F6F9F312085FCCE155 /* jmdict.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = jmdict.sqlite; sourceTree = "<group>"; };
+		C1F96A9908DF3ECCF1F7FF35 /* learner_tagger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = learner_tagger.h; sourceTree = "<group>"; };
+		CF6B7A6D1564D05B314E2427 /* lbfgs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lbfgs.h; sourceTree = "<group>"; };
+		CFFFE066DD9D904DB598D919 /* dictionary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dictionary.cpp; sourceTree = "<group>"; };
+		D11D31B1924FEAC49BEEDF14 /* dictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dictionary.h; sourceTree = "<group>"; };
+		D2FF038FAB96EFA615BB721C /* connector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = connector.cpp; sourceTree = "<group>"; };
+		D598C90587D10D10063BE875 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		DCC57B04853FFDBEA063A24F /* viterbi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = viterbi.h; sourceTree = "<group>"; };
+		DF4AC6220C2BD5564B2BA7EA /* param.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = param.cpp; sourceTree = "<group>"; };
+		E3BDBE80530CC3A52636E2D5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E5D457988CAA4DFCA5A27D61 /* KnownWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownWordsView.swift; sourceTree = "<group>"; };
+		E8086B8C4B39CB88A4562D1A /* Transcriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcriber.swift; sourceTree = "<group>"; };
+		E82659D7078CD5A84C0CBC3A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E85BC6EC7BA22563AAA83559 /* mmap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mmap.h; sourceTree = "<group>"; };
+		EB287686946A61C1434C2DE3 /* scoped_ptr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scoped_ptr.h; sourceTree = "<group>"; };
+		EC111381ACA483153B10F008 /* dictionary_rewriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dictionary_rewriter.cpp; sourceTree = "<group>"; };
+		ED919073D59071F9A3C90659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EF39DB03EE57F25DAF827ECC /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		F2442A3465D0E85FA7F929FD /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
+		F65BB9D774A15AB79E6896CF /* tokenizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tokenizer.h; sourceTree = "<group>"; };
+		FFB5DF070E38207FF13FBE0A /* param.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = param.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1EBEDDAAB938CDC06972A7AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32A089A5FD639903CD76B6F3 /* NihongoStudy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		375F4D3FBEB09C7C9A5FEF2A = {
+			isa = PBXGroup;
+			children = (
+				179343EE36DB62901CE4C778 /* unidic */,
+				85BED96C018E0374B09CAF9A /* MeCab */,
+				6736D55507B79F71FDC9169D /* NihongoStudy */,
+				C5FC7140A1DA0CBCCC48EDFF /* Resources */,
+				1EBEDDAAB938CDC06972A7AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6736D55507B79F71FDC9169D /* NihongoStudy */ = {
+			isa = PBXGroup;
+			children = (
+				08B10E8CC9DAA10FF680AA1E /* Assets.xcassets */,
+				F2442A3465D0E85FA7F929FD /* Bridging.h */,
+				E82659D7078CD5A84C0CBC3A /* DetailView.swift */,
+				EF39DB03EE57F25DAF827ECC /* Dictionary.swift */,
+				3A01C010D63D745F4696148A /* Extract.swift */,
+				76524964D7C55EC926CB6DF6 /* Grammar.swift */,
+				E3BDBE80530CC3A52636E2D5 /* HomeView.swift */,
+				ED919073D59071F9A3C90659 /* Info.plist */,
+				E5D457988CAA4DFCA5A27D61 /* KnownWordsView.swift */,
+				D598C90587D10D10063BE875 /* Library.swift */,
+				C029D8CCE212DD8228ACFB3D /* Models.swift */,
+				1D35E26112FD26681B4327CD /* NihongoStudyApp.swift */,
+				0ECCFD7F2FED68CEC4141417 /* SettingsView.swift */,
+				0EF0AF3CD2349E817CBFEB3E /* Tokenizer.swift */,
+				E8086B8C4B39CB88A4562D1A /* Transcriber.swift */,
+				43ECFB69A5960FE4AD1ADA4C /* Vocab.swift */,
+			);
+			path = NihongoStudy;
+			sourceTree = "<group>";
+		};
+		85BED96C018E0374B09CAF9A /* MeCab */ = {
+			isa = PBXGroup;
+			children = (
+				BA85461006CEF5A7CA0BE533 /* BSD */,
+				6DB2DA28AF5CADEB1E76714E /* char_property.cpp */,
+				2F25BACDE38BC8F766357DCC /* char_property.h */,
+				50CE668C9195ED008975BE46 /* common.h */,
+				34DE68724D862F89AFF8ACFF /* config.h */,
+				D2FF038FAB96EFA615BB721C /* connector.cpp */,
+				3C507A05644AEE6AD22D7014 /* connector.h */,
+				8D2AF13793282E84F6EBA8B7 /* context_id.cpp */,
+				8684191C057A360549386CFC /* context_id.h */,
+				0555809DA2DE0EC88CD0F1FD /* COPYING */,
+				839E0C585BD167344E2AA2FE /* darts.h */,
+				EC111381ACA483153B10F008 /* dictionary_rewriter.cpp */,
+				5F5CF45A7C8D36044934BE81 /* dictionary_rewriter.h */,
+				CFFFE066DD9D904DB598D919 /* dictionary.cpp */,
+				D11D31B1924FEAC49BEEDF14 /* dictionary.h */,
+				9A53D801515B63619973958C /* feature_index.cpp */,
+				8F42617322EFCA2B4FAB4C7F /* feature_index.h */,
+				B94A120F4EFF4DB8E79D1EAB /* freelist.h */,
+				8986CF3C4BAA317DABD89E21 /* iconv_utils.cpp */,
+				06EB1244EF5C35DC5060BBEE /* iconv_utils.h */,
+				CF6B7A6D1564D05B314E2427 /* lbfgs.h */,
+				48D5DADC0AF536A97E14A303 /* learner_node.h */,
+				C1F96A9908DF3ECCF1F7FF35 /* learner_tagger.h */,
+				11D218A5D83517B5575D158D /* libmecab.cpp */,
+				22B180C5E462CADFA05C1404 /* mecab.h */,
+				E85BC6EC7BA22563AAA83559 /* mmap.h */,
+				19625A0117F469ED9F16EAF7 /* nbest_generator.cpp */,
+				5E7341CA7FDED62BD389514E /* nbest_generator.h */,
+				DF4AC6220C2BD5564B2BA7EA /* param.cpp */,
+				FFB5DF070E38207FF13FBE0A /* param.h */,
+				EB287686946A61C1434C2DE3 /* scoped_ptr.h */,
+				A63428B431B93E578677FDCF /* stream_wrapper.h */,
+				4C348C557930390B04C7AC1D /* string_buffer.cpp */,
+				2EBA38218D9BF30A60ED9818 /* string_buffer.h */,
+				6A523788E5CC992EB5954FDA /* tagger.cpp */,
+				A3030ABF52B9F4DB076FE708 /* thread.h */,
+				6D6AB900D45D96EB7582C6E0 /* tokenizer.cpp */,
+				F65BB9D774A15AB79E6896CF /* tokenizer.h */,
+				5A0941458288496401E513F3 /* ucs.h */,
+				AA331250D21B6201ABE43DF4 /* ucstable.h */,
+				A137754991CB7D6F1F618905 /* utils.cpp */,
+				6E17D1A382F29123E03EF1FE /* utils.h */,
+				6E1C0E1052F7E5646C21FD05 /* viterbi.cpp */,
+				DCC57B04853FFDBEA063A24F /* viterbi.h */,
+				81C7B4B77C8EF06A634B630C /* writer.cpp */,
+				8A087EF9BF36D07A630289B7 /* writer.h */,
+			);
+			path = MeCab;
+			sourceTree = "<group>";
+		};
+		C5FC7140A1DA0CBCCC48EDFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C08C31F6F9F312085FCCE155 /* jmdict.sqlite */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3175F9A5E632A8C1819E3CAD /* NihongoStudy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1C1B9A2681EF22BC3BCCC06 /* Build configuration list for PBXNativeTarget "NihongoStudy" */;
+			buildPhases = (
+				7C03B1059622D20067074B7C /* Sources */,
+				6A3EF5E34D3E0B2E7F28C544 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NihongoStudy;
+			packageProductDependencies = (
+			);
+			productName = NihongoStudy;
+			productReference = 32A089A5FD639903CD76B6F3 /* NihongoStudy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6790E58B3C589D6B3A57DA12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3175F9A5E632A8C1819E3CAD = {
+						DevelopmentTeam = 9TVPCUWFVX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 500BAF3BEAE4BFB1D8409645 /* Build configuration list for PBXProject "NihongoStudy" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 375F4D3FBEB09C7C9A5FEF2A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1EBEDDAAB938CDC06972A7AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3175F9A5E632A8C1819E3CAD /* NihongoStudy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A3EF5E34D3E0B2E7F28C544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C62D22A9B109E190C0992A36 /* Assets.xcassets in Resources */,
+				20DE12A3723FD95ADE06FADE /* jmdict.sqlite in Resources */,
+				036D94E7C68F4D1479EE1BBF /* unidic in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C03B1059622D20067074B7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A27CBE76ADD66EF8AFF7AE5A /* DetailView.swift in Sources */,
+				9F3B06DD449CECB99E62AC90 /* Dictionary.swift in Sources */,
+				8F1AC053D6571CAFD6D6E66E /* Extract.swift in Sources */,
+				78CB164F04A26DA64BF0D55A /* Grammar.swift in Sources */,
+				F6D8D1340092D713D5F6F866 /* HomeView.swift in Sources */,
+				DCAEE8AECE155C7DF23C374A /* KnownWordsView.swift in Sources */,
+				02F64C9DC208C07CED396D7D /* Library.swift in Sources */,
+				F2D180672984799062C79DD2 /* Models.swift in Sources */,
+				6967D82524F7BE1D942BA74A /* NihongoStudyApp.swift in Sources */,
+				B1ED28FB5E5E9894C33A892A /* SettingsView.swift in Sources */,
+				088D73F006F9C5AA885AC997 /* Tokenizer.swift in Sources */,
+				09D34D1690B3867508583E6E /* Transcriber.swift in Sources */,
+				13BAF7CE3F598EA2F6E9D13A /* Vocab.swift in Sources */,
+				99088A886B71040EE3A40A2C /* char_property.cpp in Sources */,
+				0EA6DDB6FB74B9EADEDE03DE /* connector.cpp in Sources */,
+				929F1B20474309C08E74F068 /* context_id.cpp in Sources */,
+				E42476FB4396D5820BAFAB76 /* dictionary.cpp in Sources */,
+				0D71AFB58407A58C717BE970 /* dictionary_rewriter.cpp in Sources */,
+				6D0C5E6D62E6B0C204C5C160 /* feature_index.cpp in Sources */,
+				1D19B81F59E617B9CAA546D6 /* iconv_utils.cpp in Sources */,
+				F218B00CA322436F261EB08C /* libmecab.cpp in Sources */,
+				6AE1D49ED843082B0115D30C /* nbest_generator.cpp in Sources */,
+				305D593E291020EA2891A6FE /* param.cpp in Sources */,
+				531CA5322C46E2E560BBC1F6 /* string_buffer.cpp in Sources */,
+				77FB186082EBA22DDFB1215D /* tagger.cpp in Sources */,
+				441218884F60B4B6B565253B /* tokenizer.cpp in Sources */,
+				B4EB21D620F533249D20F03A /* utils.cpp in Sources */,
+				A3A6BD31F37AB506FA8EEF11 /* viterbi.cpp in Sources */,
+				602EBCB255F1C3887265EE4F /* writer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		484CA55B77254DA7E30FA6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TVPCUWFVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/MeCab";
+				INFOPLIST_FILE = NihongoStudy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "日本語";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turns the Japanese speech in your videos and audio into text, on this iPad.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robe.nihongostudy;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = NihongoStudy/Bridging.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5680F7D1F54D97B270770D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		819A0BA7459CE4FA30D349F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E8F2347B98F09F458F2784F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TVPCUWFVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/MeCab";
+				INFOPLIST_FILE = NihongoStudy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "日本語";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Turns the Japanese speech in your videos and audio into text, on this iPad.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robe.nihongostudy;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = NihongoStudy/Bridging.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		500BAF3BEAE4BFB1D8409645 /* Build configuration list for PBXProject "NihongoStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5680F7D1F54D97B270770D79 /* Debug */,
+				819A0BA7459CE4FA30D349F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D1C1B9A2681EF22BC3BCCC06 /* Build configuration list for PBXNativeTarget "NihongoStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484CA55B77254DA7E30FA6AE /* Debug */,
+				E8F2347B98F09F458F2784F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6790E58B3C589D6B3A57DA12 /* Project object */;
+}
